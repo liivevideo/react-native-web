@@ -1,53 +1,53 @@
-require('./modules/injectResponderEventPlugin');
+require('./dist/modules/injectResponderEventPlugin');
 
-var _findNodeHandle=require('./modules/findNodeHandle');var _findNodeHandle2=_interopRequireDefault(_findNodeHandle);
+var _findNodeHandle=require('./dist/modules/findNodeHandle/index');var _findNodeHandle2=_interopRequireDefault(_findNodeHandle);
 var _reactDom=require('react-dom');var _reactDom2=_interopRequireDefault(_reactDom);
 var _server=require('react-dom/server');var _server2=_interopRequireDefault(_server);
 
 
-var _Animated=require('./apis/Animated');var _Animated2=_interopRequireDefault(_Animated);
-var _AppRegistry=require('./apis/AppRegistry');var _AppRegistry2=_interopRequireDefault(_AppRegistry);
-var _AppState=require('./apis/AppState');var _AppState2=_interopRequireDefault(_AppState);
-var _AsyncStorage=require('./apis/AsyncStorage');var _AsyncStorage2=_interopRequireDefault(_AsyncStorage);
-var _Dimensions=require('./apis/Dimensions');var _Dimensions2=_interopRequireDefault(_Dimensions);
+var _Animated=require('./dist/apis/Animated/index');var _Animated2=_interopRequireDefault(_Animated);
+var _AppRegistry=require('./dist/apis/AppRegistry/index');var _AppRegistry2=_interopRequireDefault(_AppRegistry);
+var _AppState=require('./dist/apis/AppState/index');var _AppState2=_interopRequireDefault(_AppState);
+var _AsyncStorage=require('./dist/apis/AsyncStorage/index');var _AsyncStorage2=_interopRequireDefault(_AsyncStorage);
+var _Dimensions=require('./dist/apis/Dimensions/index');var _Dimensions2=_interopRequireDefault(_Dimensions);
 var _Easing=require('animated/lib/Easing');var _Easing2=_interopRequireDefault(_Easing);
-var _I18nManager=require('./apis/I18nManager');var _I18nManager2=_interopRequireDefault(_I18nManager);
-var _InteractionManager=require('./apis/InteractionManager');var _InteractionManager2=_interopRequireDefault(_InteractionManager);
-var _NetInfo=require('./apis/NetInfo');var _NetInfo2=_interopRequireDefault(_NetInfo);
-var _PanResponder=require('./apis/PanResponder');var _PanResponder2=_interopRequireDefault(_PanResponder);
-var _PixelRatio=require('./apis/PixelRatio');var _PixelRatio2=_interopRequireDefault(_PixelRatio);
-var _Platform=require('./apis/Platform');var _Platform2=_interopRequireDefault(_Platform);
-var _StyleSheet=require('./apis/StyleSheet');var _StyleSheet2=_interopRequireDefault(_StyleSheet);
-var _UIManager=require('./apis/UIManager');var _UIManager2=_interopRequireDefault(_UIManager);
-var _Vibration=require('./apis/Vibration');var _Vibration2=_interopRequireDefault(_Vibration);
+var _I18nManager=require('./dist/apis/I18nManager/index');var _I18nManager2=_interopRequireDefault(_I18nManager);
+var _InteractionManager=require('./dist/apis/InteractionManager/index');var _InteractionManager2=_interopRequireDefault(_InteractionManager);
+var _NetInfo=require('./dist/apis/NetInfo/index');var _NetInfo2=_interopRequireDefault(_NetInfo);
+var _PanResponder=require('./dist/apis/PanResponder/index');var _PanResponder2=_interopRequireDefault(_PanResponder);
+var _PixelRatio=require('./dist/apis/PixelRatio/index');var _PixelRatio2=_interopRequireDefault(_PixelRatio);
+var _Platform=require('./dist/apis/Platform/index');var _Platform2=_interopRequireDefault(_Platform);
+var _StyleSheet=require('./dist/apis/StyleSheet/index');var _StyleSheet2=_interopRequireDefault(_StyleSheet);
+var _UIManager=require('./dist/apis/UIManager/index');var _UIManager2=_interopRequireDefault(_UIManager);
+var _Vibration=require('./dist/apis/Vibration/index');var _Vibration2=_interopRequireDefault(_Vibration);
 
 
-var _ActivityIndicator=require('./components/ActivityIndicator');var _ActivityIndicator2=_interopRequireDefault(_ActivityIndicator);
-var _Image=require('./components/Image');var _Image2=_interopRequireDefault(_Image);
-var _ListView=require('./components/ListView');var _ListView2=_interopRequireDefault(_ListView);
-var _ScrollView=require('./components/ScrollView');var _ScrollView2=_interopRequireDefault(_ScrollView);
-var _Switch=require('./components/Switch');var _Switch2=_interopRequireDefault(_Switch);
-var _Text=require('./components/Text');var _Text2=_interopRequireDefault(_Text);
-var _TextInput=require('./components/TextInput');var _TextInput2=_interopRequireDefault(_TextInput);
-var _Touchable=require('./components/Touchable/Touchable');var _Touchable2=_interopRequireDefault(_Touchable);
-var _TouchableBounce=require('./components/Touchable/TouchableBounce');var _TouchableBounce2=_interopRequireDefault(_TouchableBounce);
-var _TouchableHighlight=require('./components/Touchable/TouchableHighlight');var _TouchableHighlight2=_interopRequireDefault(_TouchableHighlight);
-var _TouchableOpacity=require('./components/Touchable/TouchableOpacity');var _TouchableOpacity2=_interopRequireDefault(_TouchableOpacity);
-var _TouchableWithoutFeedback=require('./components/Touchable/TouchableWithoutFeedback');var _TouchableWithoutFeedback2=_interopRequireDefault(_TouchableWithoutFeedback);
-var _View=require('./components/View');var _View2=_interopRequireDefault(_View);
+var _ActivityIndicator=require('./dist/components/ActivityIndicator/index');var _ActivityIndicator2=_interopRequireDefault(_ActivityIndicator);
+var _Image=require('./dist/components/Image/index');var _Image2=_interopRequireDefault(_Image);
+var _ListView=require('./dist/components/ListView/index');var _ListView2=_interopRequireDefault(_ListView);
+var _ScrollView=require('./dist/components/ScrollView/index');var _ScrollView2=_interopRequireDefault(_ScrollView);
+var _Switch=require('./dist/components/Switch/index');var _Switch2=_interopRequireDefault(_Switch);
+var _Text=require('./dist/components/Text/index');var _Text2=_interopRequireDefault(_Text);
+var _TextInput=require('./dist/components/TextInput/index');var _TextInput2=_interopRequireDefault(_TextInput);
+var _Touchable=require('./dist/components/Touchable/Touchable');var _Touchable2=_interopRequireDefault(_Touchable);
+var _TouchableBounce=require('./dist/components/Touchable/TouchableBounce');var _TouchableBounce2=_interopRequireDefault(_TouchableBounce);
+var _TouchableHighlight=require('./dist/components/Touchable/TouchableHighlight');var _TouchableHighlight2=_interopRequireDefault(_TouchableHighlight);
+var _TouchableOpacity=require('./dist/components/Touchable/TouchableOpacity');var _TouchableOpacity2=_interopRequireDefault(_TouchableOpacity);
+var _TouchableWithoutFeedback=require('./dist/components/Touchable/TouchableWithoutFeedback');var _TouchableWithoutFeedback2=_interopRequireDefault(_TouchableWithoutFeedback);
+var _View=require('./dist/components/View/index');var _View2=_interopRequireDefault(_View);
 
 
-var _NativeModules=require('./modules/NativeModules');var _NativeModules2=_interopRequireDefault(_NativeModules);
-var _createDOMElement=require('./modules/createDOMElement');var _createDOMElement2=_interopRequireDefault(_createDOMElement);
-var _applyNativeMethods=require('./modules/applyNativeMethods');var _applyNativeMethods2=_interopRequireDefault(_applyNativeMethods);
+var _NativeModules=require('./dist/modules/NativeModules/index');var _NativeModules2=_interopRequireDefault(_NativeModules);
+var _createDOMElement=require('./dist/modules/createDOMElement/index');var _createDOMElement2=_interopRequireDefault(_createDOMElement);
+var _applyNativeMethods=require('./dist/modules/applyNativeMethods/index');var _applyNativeMethods2=_interopRequireDefault(_applyNativeMethods);
 
 
 
-var _ColorPropType=require('./propTypes/ColorPropType');var _ColorPropType2=_interopRequireDefault(_ColorPropType);
-var _EdgeInsetsPropType=require('./propTypes/EdgeInsetsPropType');var _EdgeInsetsPropType2=_interopRequireDefault(_EdgeInsetsPropType);
-var _PointPropType=require('./propTypes/PointPropType');var _PointPropType2=_interopRequireDefault(_PointPropType);
-var _StyleSheetPropType=require('./propTypes/StyleSheetPropType');var _StyleSheetPropType2=_interopRequireDefault(_StyleSheetPropType);
-var _BaseComponentPropTypes=require('./propTypes/BaseComponentPropTypes');var _BaseComponentPropTypes2=_interopRequireDefault(_BaseComponentPropTypes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// modules
+var _ColorPropType=require('./dist/propTypes/ColorPropType');var _ColorPropType2=_interopRequireDefault(_ColorPropType);
+var _EdgeInsetsPropType=require('./dist/propTypes/EdgeInsetsPropType');var _EdgeInsetsPropType2=_interopRequireDefault(_EdgeInsetsPropType);
+var _PointPropType=require('./dist/propTypes/PointPropType');var _PointPropType2=_interopRequireDefault(_PointPropType);
+var _StyleSheetPropType=require('./dist/propTypes/StyleSheetPropType');var _StyleSheetPropType2=_interopRequireDefault(_StyleSheetPropType);
+var _BaseComponentPropTypes=require('./dist/propTypes/BaseComponentPropTypes');var _BaseComponentPropTypes2=_interopRequireDefault(_BaseComponentPropTypes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// modules
 // APIs
 var ReactNative={
 // top-level API
