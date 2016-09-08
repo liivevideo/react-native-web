@@ -93,14 +93,11 @@ const ReactNative = {
   // modules
   NativeModules,
   createDOMElement,
-  applyNativeMethods,
 
   // propTypes
   ColorPropType,
   EdgeInsetsPropType,
   PointPropType,
-  StyleSheetPropType,
-  BaseComponentPropTypes
 };
 
 module.exports = ReactNative;
